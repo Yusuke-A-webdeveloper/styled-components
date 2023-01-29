@@ -15,7 +15,7 @@ function App() {
           <Route path="about" element={<About />} />
           <Route path="contact" element={<Contact />} />
           <Route path="*" element={<Error />} />
-          <Route path="service/:serviceId" element={<SingleService />} />
+          <Route path=":serviceId" element={<SingleService />} />
         </Route>
       </Routes>
     </BrowserRouter>
