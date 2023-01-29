@@ -19,19 +19,6 @@ export const DefaultButton = styled.a`
   }
 `;
 
-export const ServiceButton = styled(DefaultButton)`
-  border-bottom: none;
-  padding: 4px 10px;
-  color: var(--white);
-  border: 2px solid var(--white);
-  text-transform: capitalize;
-  &:hover {
-    color: var(--header3);
-    border: 2px solid var(--header3);
-    opacity: 1;
-  }
-`;
-
 export const SubmitButton = styled.button.attrs((props) => {
   return { type: props.type || 'button' };
 })`
