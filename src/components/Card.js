@@ -13,9 +13,7 @@ const Card = () => {
           <div className="single-service" key={id}>
             <div className="icon-con">{icon}</div>
             <h3>{name}</h3>
-            <Link to={`/${id}`} target="_blank" rel="noopener noreferrer">
-              see detail
-            </Link>
+            <Link to={`/service/${id}`}>see detail</Link>
           </div>
         );
       })}

@@ -14,8 +14,8 @@ function App() {
           <Route index element={<Home />} />
           <Route path="about" element={<About />} />
           <Route path="contact" element={<Contact />} />
+          <Route path="service/:serviceId" element={<SingleService />} />
           <Route path="*" element={<Error />} />
-          <Route path=":serviceId" element={<SingleService />} />
         </Route>
       </Routes>
     </BrowserRouter>
