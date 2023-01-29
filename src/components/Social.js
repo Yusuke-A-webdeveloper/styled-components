@@ -13,7 +13,9 @@ const Social = () => {
           const { id, icon, href } = list;
           return (
             <li key={id}>
-              <a href={href}>{icon}</a>
+              <a href={href} target="_blank" rel="noopener noreferrer">
+                {icon}
+              </a>
             </li>
           );
         })}
