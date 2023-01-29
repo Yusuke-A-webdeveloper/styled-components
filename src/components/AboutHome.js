@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { DefaultTitle } from './Title';
 import aboutImg from '../images/about.jpg';
-import { AboutButton } from './Button';
+import { Link } from 'react-router-dom';
 
 const AboutHome = () => {
   return (
@@ -25,7 +25,7 @@ const AboutHome = () => {
             dignissimos veritatis nostrum hic, rerum obcaecati aliquid neque
             doloribus distinctio earum.
           </p>
-          <AboutButton href="/about">learn more</AboutButton>
+          <Link to="/about">learn more</Link>
         </main>
       </article>
     </Wrapper>
@@ -71,6 +71,24 @@ const Wrapper = styled.section`
       }
       p {
         font-size: 18px;
+      }
+      a {
+        background: transparent;
+        display: inline-block;
+        font-size: 18px;
+        text-decoration: none;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        padding: 4px 8px;
+        margin-top: 20px;
+        cursor: pointer;
+        transition: 0.3s ease-out;
+        color: var(--header2);
+        border: 2px solid var(--header2);
+        &:hover {
+          color: var(--white);
+          border: 2px solid var(--white);
+        }
       }
     }
   }

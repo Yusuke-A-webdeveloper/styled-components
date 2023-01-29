@@ -19,17 +19,6 @@ export const DefaultButton = styled.a`
   }
 `;
 
-export const AboutButton = styled(DefaultButton)`
-  color: var(--header2);
-  border-bottom: none;
-  border: 2px solid var(--header2);
-  &:hover {
-    color: var(--white);
-    border: 2px solid var(--white);
-    opacity: 1;
-  }
-`;
-
 export const ServiceButton = styled(DefaultButton)`
   border-bottom: none;
   padding: 4px 10px;
